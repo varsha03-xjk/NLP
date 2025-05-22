@@ -3,8 +3,6 @@ from transformers import pipeline
 # Load the FLAN Alpaca Large model
 paraphraser = pipeline("text2text-generation", model="declare-lab/flan-alpaca-large")
 
-!pip install transformers gradio sentencepiece
-
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import gradio as gr
 
